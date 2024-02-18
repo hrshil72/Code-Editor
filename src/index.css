@@ -16,12 +16,17 @@ body {
   height: 340px;
   /* width: 32vw; */
   color: white;
+  position: relative;
+  overflow: hidden;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .CodeMirror-gutter {
-  background-color: #1d1e22 !important;
+  background-color: #07182e !important;
 }
 
 .CodeMirror-scroll {
-  background-color: #1d1e22 !important;
+  background-color: #07182e !important;
 }

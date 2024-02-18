@@ -11,10 +11,15 @@ import { useState } from "react";
 
 const Heading = styled(Box)`
   display: flex;
-  background-color: #1d1e22;
-  padding: 8px 10px;
-  border-top: 5px solid #34363e;
+  /* background-color: #1d1e22; */
+  background-color: #07182e;
+  padding: 5px 0;
+  width: 100px;
+  border-top: 4px solid #34363e;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   color: #aaaebc;
@@ -25,7 +30,6 @@ const Header = styled(Box)`
   display: flex;
   align-items: center;
   color: white;
-  background-color: color;
   justify-content: space-between;
 `;
 
@@ -37,21 +41,22 @@ const Container = styled(Box)`
 `;
 
 const Editor = ({ language, sign, color, value, onChange }) => {
-  let [close, setClose] = useState(true);
+  let [open, setOpen] = useState(true);
 
   const handleChange = (editor, data, value) => {
     onChange(value);
   };
 
   return (
-    <Container style={close ? null : { flexGrow: 0 }}>
+    <Container style={open ? null : { flexGrow: 0 }}>
       <Header>
         <Heading>
           <Box
             style={{
               backgroundColor: color,
-              padding: "2px 0px",
-              placeContent: "center",
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
               textAlign: "center",
               borderRadius: "5px",
               height: "20px",
@@ -67,7 +72,7 @@ const Editor = ({ language, sign, color, value, onChange }) => {
         </Heading>
         <CloseFullscreenIcon
           fontSize="small"
-          onClick={() => setClose((prev) => !prev)}
+          onClick={() => setOpen((prev) => !prev)}
         />
       </Header>
       <ControlledEditor

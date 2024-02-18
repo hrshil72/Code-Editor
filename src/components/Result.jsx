@@ -3,8 +3,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { DataContext } from "../context/DataProvider";
 
 const Container = styled(Box)`
-  background-color: red;
-  width: 100%;
+  width: 100v;
   height: 45vh;
 `;
 

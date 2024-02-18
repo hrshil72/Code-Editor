@@ -9,6 +9,8 @@ const Container = styled(Box)`
   display: flex;
   justify-content: space-evenly;
   padding: 0px 10px 15px 10px;
+  position: relative;
+  overflow: hidden;
 `;
 
 const EditorContainer = () => {
