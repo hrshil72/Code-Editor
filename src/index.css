@@ -14,7 +14,7 @@ body {
 
 .CodeMirror {
   height: 340px;
-  width: 340px;
+  /* width: 32vw; */
   color: white;
 }
 
