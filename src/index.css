@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.CodeMirror {
+  height: 340px;
+  width: 340px;
+  color: white;
+}
+
+.CodeMirror-gutter {
+  background-color: #1d1e22 !important;
+}
+
+.CodeMirror-scroll {
+  background-color: #1d1e22 !important;
+}
